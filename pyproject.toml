@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "drone-optics-mcp"
+version = "1.0.0"
+description = "Aerial photography aesthetics through caustic optics simulation (MCP server)"
+authors = [{name = "Dal Marsters"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp",
+    "numpy",
+    "pillow"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio"
+]
